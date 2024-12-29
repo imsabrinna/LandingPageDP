@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Workout Plan</title>
+
+    <!-- Font and CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Logo -->
+            <div class="nav-logo">
+                <img src="assets/LogoDPVetor.svg" alt="Logo Deep Sthetics">
+            </div>
+        
+            <!-- Hamburger Icon Mobile -->
+            <div class="nav-hamburger">
+                <i id="hamburger" class="fa-solid fa-bars"></i>
+            </div>
+        
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">About Us</a>
+            </nav>
+        
+            <!-- Icons -->
+            <div class="nav-icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-container">
+
+                <div class="hero-left">
+                    <img src="/assets/FreeWorkoutPlan.png" alt="Fitness People">
+                    <h1>Get your Free Workout Plan! </h1>
+                    <p>Get your personalized workout plan and start achieving your fitness goals today! Let's do it!</p>
+                    <br>
+                    <div class="social-media-icons">
+                        <i class="fa-brands fa-facebook-f facebook-icon"></i>
+                        <i class="fa-brands fa-instagram instagram-icon"></i>
+                    </div>
+
+                </div>
+
+                <div class="hero-right">
+                    <div class="container-form">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="full-name">Full Name <span class="required">*</span><br></label>
+                            <input type="text" id="full-name" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span><br></label>
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="opcao">What is your fitness goal? <span class="required">*</span></label>
+                            <select id="opcao" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="opcao1">Lose Weight</option>
+                                <option value="opcao2">Maintain</option>
+                                <option value="opcao2">Gain Muscle Mass</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="opcao">What is your fitness level? <span class="required">*</span></label>
+                            <select id="opcao" required>
+                                <option value="">Select an option</option>
+                                <option value="opcao1">Basic</option>
+                                <option value="opcao2">Intermediate</option>
+                                <option value="opcao2">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="opcao">What is your gender? <span class="required">*</span></label>
+                            <select id="opcao" required>
+                                <option value="">Select an option</option>
+                                <option value="opcao1">Female</option>
+                                <option value="opcao2">Male</option>
+                            </select>
+                        </div>
+                        <button type="submit">Get my free workout plan!</button>
+                    </form>
+                    
+                    </div>
+                </div>
+
+            </div>
+        </section> 
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+        <h6 class="footer-sign"> Developed with <strong>love</strong> by Sabrina</h6>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

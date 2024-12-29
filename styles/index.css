@@ -1,0 +1,366 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+:root {
+    /* Colors */
+    --primary-color: #212121;
+    --secondary-color: #747474;
+    --highlight-color: #83D89B;
+    --background-color: #ffffff;
+
+    /* Fonts */
+    --font-family: 'Poppins', sans-serif;
+    --font-size-base: 16px;
+    --font-size-small: 12px;
+    --font-size-title: 24px;
+    --font-size-large: 3.5rem;
+
+
+    /* Grid */
+    --container-width: 1140px; /* Tamanho máximo do container (padrão de 12 colunas) */
+}
+
+/* Body Styles */
+html, body {
+    font-family: var(--font-family);
+    font-weight: 300;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container centralizado */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: var(--background-color);
+    /* height: 50px; */
+}
+
+.nav-logo img {
+    max-height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-icons i {
+    font-size: 1rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-icons i:hover {
+    color: var(--secondary-color);
+}
+
+/* Hamburger Icon */
+.nav-hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; /* Centraliza o logo */
+        align-items: center;
+        position: relative;
+    }
+
+    .nav-hamburger {
+        display: block; /* Exibe o ícone de hambúrguer no mobile */
+        position: absolute;
+        left: 20px;
+        z-index: 20; /* Alinha o ícone ao lado esquerdo */
+    }
+
+    .nav-logo {
+        position: static; /* Centraliza o logo no fluxo natural */
+        margin: 0 auto;
+    }
+
+    .nav-icons {
+        display: flex; /* Garante que os ícones sejam exibidos */
+        position: absolute;
+        right: 20px; /* Posiciona os ícones no lado direito */
+        gap: 32px; /* Ajusta o espaçamento entre os ícones */
+    }
+
+    .nav-icons i.fa-user {
+        display: none;
+    }
+
+    .nav-hamburger i {
+        font-size: 1.5rem; /* Ajuste o valor conforme necessário */
+    }
+
+    .nav-links {
+        display: none; /* Oculta o menu inicialmente */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--background-color);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        z-index: 10;
+    }
+
+    .nav-links.show {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Hero Section */
+.hero {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 40px;
+    
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    gap: 80px;
+    align-items: flex-start;
+    min-height: calc(100vh - 150px - 70px);
+}
+
+/* .hero-right {
+    padding: 0 60px;
+} */
+
+.hero-left,
+.hero-right {
+    width: 50%;
+}
+
+.hero-left img {
+    max-width: 80%;
+    height: auto;
+}
+
+.hero-left h1 {
+    font-size: var(--font-size-large);
+    margin-top: 20px;
+    line-height: 4.5rem;
+}
+
+.hero-left p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.social-media-icons {
+    display: flex; 
+    gap: 32px; 
+    font-size: var(--font-size-title);
+    max-width: 100%;
+}
+
+.facebook-icon {
+    padding: 2px;
+}
+
+.instagram-icon {
+    font-size: 28px;
+}
+
+.container-form {
+    background-color: var(--primary-color);
+    padding: 50px;
+    border-radius: 40px;
+}
+
+.hero-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-right label {
+    font-size: 1rem;
+    color: var(--background-color);
+}
+
+.hero-right select {
+    appearance: none;
+    padding: 14px;
+    font-size: 1rem;
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    margin: 5px 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 12px;
+}
+
+.hero-right select:hover {
+    border-color: var(--highlight-color);
+    background-color: #333333;
+    color: var(--background-color);
+}
+
+.hero-right select:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+}
+
+.hero-right input {
+    padding: 14px;
+    font-size: 1rem;
+    margin: 5px 0;
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
+.hero-right button {
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: var(--highlight-color);
+    border: none;
+    color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 28px 0 0 0;
+}
+
+.hero-right button:hover {
+    background-color: #77c48d;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 0px;
+    }
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0px 80px;
+    }
+
+    .hero-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-left img {
+        max-width: 90%;
+    }
+
+    .social-media-icons {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center; /* Centraliza o texto */
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-container {
+    max-width: var(--container-width);
+    width: 100%;
+    margin: 0 auto; 
+    padding: 16px 0px;
+}
+
+.footer-sign {
+    font-size: var(--font-size-small);
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.footer-sign strong {
+    color: var(--highlight-color);
+}
