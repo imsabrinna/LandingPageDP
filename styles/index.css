@@ -153,6 +153,11 @@ header {
     .nav-links.show {
         display: flex; /* Mostra o menu quando ativo */
     }
+
+    .nav-logo img {
+        max-height: 30px;
+        padding-top: 8px;
+    }
 }
 
 
