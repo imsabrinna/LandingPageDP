@@ -156,7 +156,7 @@ header {
 
     .nav-logo img {
         max-height: 30px;
-        padding-top: 8px;
+        padding-top: 10px;
     }
 }
 
@@ -221,6 +221,7 @@ header {
     gap: 32px; 
     font-size: var(--font-size-title);
     max-width: 100%;
+    cursor: pointer;
 }
 
 .facebook-icon {
@@ -268,12 +269,14 @@ header {
     background-size: 12px;
 }
 
+
 .hero-right select:hover {
     border-color: var(--highlight-color);
     background-color: #333333;
     color: var(--background-color);
 }
 
+.hero-right input:focus,
 .hero-right select:focus {
     outline: none;
     border-color: var(--highlight-color);
@@ -286,6 +289,7 @@ header {
     border: 1px solid var(--background-color);
     border-radius: 5px;
     background-color: var(--primary-color);
+    color: var(--background-color);
 }
 
 .hero-right button {
