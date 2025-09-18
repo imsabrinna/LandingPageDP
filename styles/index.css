@@ -258,6 +258,7 @@ header {
     appearance: none;
     padding: 14px;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
     border: 1px solid var(--background-color);
     border-radius: 5px;
     margin: 5px 0;
@@ -267,6 +268,10 @@ header {
     background-repeat: no-repeat;
     background-position: right 14px center;
     background-size: 12px;
+}
+
+.hero-right select:valid {
+    color: var(--background-color); /* quando o usuário escolhe algo */
 }
 
 
@@ -285,6 +290,7 @@ header {
 .hero-right input {
     padding: 14px;
     font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
     margin: 5px 0;
     border: 1px solid var(--background-color);
     border-radius: 5px;
